@@ -1,0 +1,12 @@
+{
+    "author": "Luís Jesus",
+    "name": "Steam Search Fixer",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Fixes annoying search placeholder on the Steam website.",
+    "permissions": ["tabs", "http://*/*"],
+    "content_scripts" : [{
+        "matches" : [ "http://store.steampowered.com/*"],
+        "js" : ["steam-search-fixer.js"]
+    }]
+}
